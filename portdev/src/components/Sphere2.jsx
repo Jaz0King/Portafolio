@@ -4,14 +4,10 @@ import { useRef, useState } from 'react';
 const Sphere2 = () => {
     const [clicked, click] = useState(false)
     const ref = useRef()
-   /* const texture = useCubeTexture(
-        ["px.png", "nx.png", "py.png", "ny.png", "pz.png", "nz.png"],
-        {path: "sphere/"}
-    )*/
-
+  
     return (
         <mesh 
-        position={[6, 0, 0]} 
+        position={[8, 0, 6]} 
         ref={ref}
         scale={clicked ? 2.5 : 1}
         onClick={(e) => click(!clicked)}

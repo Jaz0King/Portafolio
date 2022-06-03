@@ -1,14 +1,28 @@
-import React, { useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from 'react';
+import { useRef, useState } from 'react';
+import { useLoader } from '@react-three/fiber'
+import { TextureLoader } from 'three/src/loaders/TextureLoader';
+import matcap1 from '../assets/dw.jpg';
 
-export default function Model({ ...props }) {
-  const group = useRef()
-  const { nodes, materials } = useGLTF('/assets/eart1.gltf')
-  return (
-    <group ref={group} {...props} dispose={null}>
-      <mesh geometry={nodes.Cube001.geometry} material={materials['Default OBJ']} />
-    </group>
-  )
+const Sphere = () => {
+    const [clicked, click] = useState(false)
+    const ref = useRef()
+
+    const matcap = useLoader(TextureLoader, matcap1)
+ 
+    return (
+        
+        <mesh 
+        position={[-4, 0, 0]}
+        ref={ref}
+        scale={clicked ? 2.5 : 1}
+        onClick={(e) => click(!clicked)}
+        >
+          <sphereGeometry args={[3,90,90]}/> 
+          <meshMatcapMaterial matcap={matcap} />  
+        </mesh>
+        
+    )
 }
 
-useGLTF.preload('/assets/eart1.gltf')
+export default Sphere;
