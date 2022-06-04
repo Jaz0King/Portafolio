@@ -1,18 +1,30 @@
 {
   "files": {
-    "main.css": "/Portafolio/static/css/main.8985fd30.css",
-    "main.js": "/Portafolio/static/js/main.24811d0c.js",
+    "main.css": "/Portafolio/static/css/main.03120dcd.css",
+    "main.js": "/Portafolio/static/js/main.6996a7d3.js",
     "static/media/pt.png": "/Portafolio/static/media/pt.7bd7ea0814e5ab41b9a5.png",
+    "static/media/memory.png": "/Portafolio/static/media/memory.46f1777923d351cc4b4c.png",
+    "static/media/trivia.png": "/Portafolio/static/media/trivia.846d61f7a9f191262ef3.png",
+    "static/media/cross.png": "/Portafolio/static/media/cross.6d6fc5c2f0fc40c634eb.png",
     "static/media/souternSunpng.png": "/Portafolio/static/media/souternSunpng.773f8cea17f38186b5dd.png",
     "static/media/CV.pdf": "/Portafolio/static/media/CV.00c2101c88d5718eacb0.pdf",
-    "static/media/matcap2.png": "/Portafolio/static/media/matcap2.dea923180a9cbf6ece24.png",
+    "static/media/dash.png": "/Portafolio/static/media/dash.b3119d56ebc53c38da01.png",
+    "static/media/img1.jpg": "/Portafolio/static/media/img1.81582ccf4d8077c404a9.jpg",
+    "static/media/mexflix.png": "/Portafolio/static/media/mexflix.67e4b2e49482bd5d4eef.png",
+    "static/media/port.png": "/Portafolio/static/media/port.bf604d381ec1cfa64d9c.png",
+    "static/media/visitors.png": "/Portafolio/static/media/visitors.3475136792928027e804.png",
+    "static/media/tx3.png": "/Portafolio/static/media/tx3.517205e1656ddac8619d.png",
+    "static/media/js.png": "/Portafolio/static/media/js.34881c5ffec9c0ac1b30.png",
+    "static/media/resp.png": "/Portafolio/static/media/resp.a2afb97993c55b61d43b.png",
     "static/media/dw.jpg": "/Portafolio/static/media/dw.d34f50295dc8966f83f9.jpg",
+    "static/media/cypher.png": "/Portafolio/static/media/cypher.79d76116d027c019d56d.png",
+    "static/media/ptx.webp": "/Portafolio/static/media/ptx.55a6a9c1b84651a44b70.webp",
     "index.html": "/Portafolio/index.html",
-    "main.8985fd30.css.map": "/Portafolio/static/css/main.8985fd30.css.map",
-    "main.24811d0c.js.map": "/Portafolio/static/js/main.24811d0c.js.map"
+    "main.03120dcd.css.map": "/Portafolio/static/css/main.03120dcd.css.map",
+    "main.6996a7d3.js.map": "/Portafolio/static/js/main.6996a7d3.js.map"
   },
   "entrypoints": [
-    "static/css/main.8985fd30.css",
-    "static/js/main.24811d0c.js"
+    "static/css/main.03120dcd.css",
+    "static/js/main.6996a7d3.js"
   ]
 }
