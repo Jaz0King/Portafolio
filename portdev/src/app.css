@@ -14,7 +14,26 @@
     text-align: center;
 }
 
+.contText2 {
+    background-color: black;
+    color: white;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 3vh;
+    text-align: center;
+}
+
 .divButton {
     align-items: center;
 }
 
+.iconW {
+    color: green;
+}
+
+.iconL{
+    color: blue;
+}
+
+.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+    background-color: black;
+}

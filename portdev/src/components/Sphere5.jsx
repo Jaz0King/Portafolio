@@ -2,7 +2,7 @@ import React from 'react';
 import { useRef, useState } from 'react';
 import { useLoader } from '@react-three/fiber'
 import { TextureLoader } from 'three/src/loaders/TextureLoader';
-import matcap2 from '../assets/matcap2.png';
+import matcap2 from '../assets/ptx.webp';
 
 const Sphere5 = () => {
     const [clicked, click] = useState(false)
@@ -18,7 +18,7 @@ const Sphere5 = () => {
         scale={clicked ? 2.5 : 1}
         onClick={(e) => click(!clicked)}
         >
-          <sphereGeometry /> 
+          <sphereGeometry args={[3,90,90]} /> 
           <meshMatcapMaterial matcap={matcap} />  
         </mesh>
         

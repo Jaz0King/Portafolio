@@ -13,7 +13,7 @@ const Sphere3 = () => {
     return (
         
         <mesh 
-        position={[-10, 0, 0]}
+        position={[-20, 0, 0]}
         ref={ref}
         scale={clicked ? 2.5 : 1}
         onClick={(e) => click(!clicked)}

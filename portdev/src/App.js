@@ -8,15 +8,17 @@ import Sphere3 from "./components/Sphere3";
 import Sphere4 from "./components/Sphere4";
 import Sphere5 from "./components/Sphere5";
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
+import Footer from "./components/Footer";
 import { Html, MapControls, Stars, OrbitControls, PerspectiveCamera} from "@react-three/drei";
 import Typewriter from "react-typewriter-animate";
 import "react-typewriter-animate/dist/Typewriter.css";
 import ModalDialog from "./components/ModalDialog";
 import ModalDialog2 from "./components/ModalDialog2";
 //Pasamos los objetos en 3D como props de ThreeScene
+
 function App() {
   return (
-    <div style={{ height: '100vh', overflow: 'hidden' }}>
+    <div style={{ height: '80vh'}}>
       <div className="contText1">
         <ResponsiveAppBar />
         <Typewriter 
@@ -89,6 +91,9 @@ function App() {
         <ambientLight />
       </ThreeScene>
       
+      <div className="contText2">
+        <Footer />
+      </div>
     </div>
   );
 }
