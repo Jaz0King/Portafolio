@@ -2,7 +2,6 @@
 
 
 .subt {
-    
     font-size: 9vh;
 }
 
@@ -14,7 +13,34 @@
     text-align: center;
 }
 
+.contText2 {
+    background-color: black;
+    color: white;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 3vh;
+    text-align: center;
+}
+
 .divButton {
     align-items: center;
 }
 
+.iconW {
+    color: green;
+}
+
+.iconL{
+    color: blue;
+}
+
+.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+    background-color: black;
+}
+ .mD1 {
+     align-items: center;
+ }
+
+ .html1 {
+     color: transparent;
+     background-color: transparent;
+ }

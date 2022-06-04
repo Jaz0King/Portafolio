@@ -5,11 +5,10 @@ import { styled } from '@mui/material/styles';
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
-import DialogActions from '@mui/material/DialogActions';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
+import CardM from "./CardM.jsx";
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
@@ -72,26 +71,18 @@ BootstrapDialogTitle.propTypes = {
         open={open}
       >
         <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
-          JavaScript - Vanilla
+          JavaScript Vanilla
         </BootstrapDialogTitle>
         <DialogContent dividers>
           <Typography gutterBottom>
-            Mis primeros proyectos con JavaScript Vanilla
+            Mis primeros proyectos con JS, CSS3 y HTML5.
           </Typography>
           <Typography gutterBottom>
-            Trivia de los peores expresidentes que há tenido méxico.
-          </Typography>
-          <Typography gutterBottom>
-              <Link href="https://jaz0king.github.io/Trivia-Proyect/Trivia2.html" underline="always"> 
-          Trivia JS Vanilla
-          </Link>
+          <div>
+          <CardM />
+          </div>
           </Typography>
         </DialogContent>
-        <DialogActions>
-          <Button autoFocus onClick={handleClose}>
-            Save changes
-          </Button>
-        </DialogActions>
       </BootstrapDialog>
     </div>
   );

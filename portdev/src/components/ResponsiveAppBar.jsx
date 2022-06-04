@@ -8,12 +8,12 @@ import Menu from '@mui/material/Menu';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import Container from '@mui/material/Container';
 import MenuItem from '@mui/material/MenuItem';
-import BlurOnSharpIcon from '@mui/icons-material/BlurOnSharp';
+import CodeIcon from '@mui/icons-material/Code';
 import ModalDialog from "./ModalDialog";
 import ModalDialog2 from "./ModalDialog2";
-
-
-
+import ModalDialog3 from "./ModalDialog3";
+import ModalDialog4 from "./ModalDialog4";
+import ModalDialog5 from "./ModalDialog5";
 const pages = ['Bío', 'JS', 'React', 'CV', 'Contacto'];
 
 
@@ -40,7 +40,7 @@ const ResponsiveAppBar = () => {
     <AppBar position="static" color="transparent">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <BlurOnSharpIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+        <CodeIcon />
           <Typography
             variant="h6"
             noWrap
@@ -97,10 +97,18 @@ const ResponsiveAppBar = () => {
                 <MenuItem key={pages.JS} onClick={handleCloseNavMenu}>
                 <ModalDialog2 />
                 </MenuItem>
-             
+                <MenuItem key={pages.React} onClick={handleCloseNavMenu}>
+                <ModalDialog3 />
+                </MenuItem>
+                <MenuItem key={pages.CV} onClick={handleCloseNavMenu}>
+                <ModalDialog4 />
+                </MenuItem>
+                <MenuItem key={pages.Contacto} onClick={handleCloseNavMenu}>
+                <ModalDialog5 />
+                </MenuItem>
             </Menu>
           </Box>
-          <BlurOnSharpIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <CodeIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -122,6 +130,9 @@ const ResponsiveAppBar = () => {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               <ModalDialog />
               <ModalDialog2 />
+              <ModalDialog3 />
+              <ModalDialog4 />
+              <ModalDialog5 />
           </Box>
         </Toolbar>
       </Container>
