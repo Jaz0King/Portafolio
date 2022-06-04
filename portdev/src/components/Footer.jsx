@@ -9,6 +9,8 @@ import Container from '@mui/material/Container';
 import BlurOnSharpIcon from '@mui/icons-material/BlurOnSharp';
 import ModalDialog from "./ModalDialog";
 import ModalDialog2 from "./ModalDialog2";
+import PhoneIcon from '@mui/icons-material/Phone';
+import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import { RiWhatsappFill } from "react-icons/ri";
 import { SiGithub, SiLinkedin  } from "react-icons/si";
 
@@ -29,6 +31,8 @@ const Footer = () => {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               color="inherit"
+              href="https://wa.me/575576703061"
+              target="_blank"
             > 
               <RiWhatsappFill className="iconW"/>
             </IconButton>
@@ -39,6 +43,8 @@ const Footer = () => {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               color="inherit"
+              href="https://github.com/Jaz0King"
+              target="_blank"
             >
             <SiGithub />
             </IconButton>
@@ -49,9 +55,24 @@ const Footer = () => {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               color="inherit"
+              href="https://linkedin.com/in/jaziel-ramírez-34a277217"
+              target="_blank"
             >
                  <SiLinkedin className="iconL"/>
-            </IconButton>        
+            </IconButton>   
+
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              color="inherit"
+              href="https://mpago.la/2nTpzWM"
+              target="_blank"
+            >
+                 <VolunteerActivismIcon className="iconP"/>
+            </IconButton>   
+
       </Container>
     </AppBar>
   );

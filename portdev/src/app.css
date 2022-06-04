@@ -2,7 +2,6 @@
 
 
 .subt {
-    
     font-size: 9vh;
 }
 
@@ -37,3 +36,11 @@
 .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
     background-color: black;
 }
+ .mD1 {
+     align-items: center;
+ }
+
+ .html1 {
+     color: transparent;
+     background-color: transparent;
+ }

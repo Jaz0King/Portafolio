@@ -8,7 +8,7 @@ import DialogContent from '@mui/material/DialogContent';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
-import CardM from "./CardM.jsx";
+import Reglamento from "../assets/CV.pdf";
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
@@ -48,7 +48,7 @@ BootstrapDialogTitle.propTypes = {
   onClose: PropTypes.func.isRequired,
 };
 
- function ModalDialog2() {
+ function ModalDialog4() {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -57,12 +57,18 @@ BootstrapDialogTitle.propTypes = {
   const handleClose = () => {
     setOpen(false);
   };
+  const style = {
+    display: "block",
+    margin: "auto",
+    width: "100%",
+    height: "100%",
+  };
 
   return (
     <div>
       <Button  onClick={handleClickOpen}>
         <div className="divButton">
-          JavaScript
+          C.V.
         </div>
       </Button>
       <BootstrapDialog
@@ -71,16 +77,24 @@ BootstrapDialogTitle.propTypes = {
         open={open}
       >
         <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
-          JavaScript Vanilla
+          Curriculum Vitae
         </BootstrapDialogTitle>
         <DialogContent dividers>
           <Typography gutterBottom>
-            Mis primeros proyectos con JS, CSS3 y HTML5.
+              
+          <a target="_blanck" href={Reglamento}>
+                <IconButton color="primary">
+                  Abrir Documento
+                  
+                </IconButton>
+              </a>
+              <div>
+            <object data={Reglamento} style={style} label="pdf">
+            </object>
+            </div>
           </Typography>
           <Typography gutterBottom>
-          <div>
-          <CardM />
-          </div>
+              Si no puedes ver el pdf abrelo en una ventana nueva, tamién es interactivo.
           </Typography>
         </DialogContent>
       </BootstrapDialog>
@@ -88,4 +102,4 @@ BootstrapDialogTitle.propTypes = {
   );
 }
 
-export default ModalDialog2;
+export default ModalDialog4;

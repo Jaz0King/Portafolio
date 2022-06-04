@@ -1,14 +1,20 @@
 import * as React from 'react';
+import '../app.css'
 import PropTypes from 'prop-types';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
-import DialogActions from '@mui/material/DialogActions';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
+import CardMedia from '@mui/material/CardMedia';
+import js from '../assets/js.png';
+import resp from '../assets/resp.png';
+import {SiHtml5, SiCss3, SiJavascript, SiReact, SiBootstrap, SiMaterialui, SiGnubash, SiGit, SiGithub, SiFirebase, SiMarkdown, SiTailwindcss, SiNpm } from "react-icons/si";
+
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
@@ -59,7 +65,7 @@ BootstrapDialogTitle.propTypes = {
   };
 
   return (
-    <div>
+    <div className="mD1">
       <Button  onClick={handleClickOpen}>
         <div className="divButton">
           Bío
@@ -75,23 +81,66 @@ BootstrapDialogTitle.propTypes = {
         </BootstrapDialogTitle>
         <DialogContent dividers>
           <Typography gutterBottom>
-            Jaziel Ramírez desarrollador web, mi pasión es el desarrollo web y la tecnología, el diseño y el arte.
+            Soy Jaziel Ramírez Desarrollador web, diseñador gráco y maestro, mi pasión es el desarrollo web y de software, la tecnología, el diseño y el arte.
           </Typography>
           <Typography gutterBottom>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+            <th>Certificaciones</th>
+            <tr>
+            <CardMedia
+        component="img"
+        alt="green iguana"
+        height="140"
+        image={resp}
+      />
+            <Link href="https://www.freecodecamp.org/certification/fcce547ef2c-7b28-481a-a68b-373601c9c7a5/responsive-web-design" target="_blank" underline="always"> 
+            - Responsive Web Design
+            </Link>
+            </tr>
+            <tr>
+            <CardMedia
+        component="img"
+        alt="green iguana"
+        height="140"
+        image={js}
+      />
+            <Link href="https://www.freecodecamp.org/certification/fcce547ef2c-7b28-481a-a68b-373601c9c7a5/javascript-algorithms-and-data-structures" target="_blank" underline="always"> 
+            - JavaScript Algorithms and Data Structures
+            </Link>
+            </tr>
           </Typography>
           <Typography gutterBottom>
-            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus
-            magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec
-            ullamcorper nulla non metus auctor fringilla.
+          Egresado de BootCamp Ajusco, desarrollador frerlance con proyectos individuales y colaborativos en GitHub.
           </Typography>
+          <Link href="https://github.com/Jaz0King" target="_blank" underline="always"> 
+            - Mi Perfil en Github
+            </Link>
+          <Typography gutterBottom>
+            <th>TechSkills</th>
+            <SiHtml5 />
+            <SiCss3/>
+            <SiJavascript />
+            <SiReact/>
+            <SiBootstrap />
+            <SiMaterialui />
+            <SiGnubash />
+            <SiGit />
+            <SiGithub />
+            <SiFirebase/>
+            <SiMarkdown />
+            <SiTailwindcss />
+            <SiNpm />
+            <th>SoftSkills</th>
+            <tr>* Comunicación acertiva</tr>
+            <tr>* Pensamiento analítico</tr>
+            <tr>* Trabajo en equipo</tr>
+            <tr>* Reciliencia</tr>
+            <tr>* Empatía</tr>
+            <tr>* Autoaprendizaje</tr>
+            <tr>* Creatividad</tr>
+            <tr>* Enseñanza</tr>
+          </Typography>
+          
         </DialogContent>
-        <DialogActions>
-          <Button autoFocus onClick={handleClose}>
-            Save changes
-          </Button>
-        </DialogActions>
       </BootstrapDialog>
     </div>
   );

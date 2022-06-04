@@ -8,7 +8,7 @@ import DialogContent from '@mui/material/DialogContent';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
-import CardM from "./CardM.jsx";
+import CardM2 from "./CardM2.jsx";
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
@@ -48,7 +48,7 @@ BootstrapDialogTitle.propTypes = {
   onClose: PropTypes.func.isRequired,
 };
 
- function ModalDialog2() {
+ function ModalDialog3() {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -62,7 +62,7 @@ BootstrapDialogTitle.propTypes = {
     <div>
       <Button  onClick={handleClickOpen}>
         <div className="divButton">
-          JavaScript
+          React
         </div>
       </Button>
       <BootstrapDialog
@@ -71,21 +71,20 @@ BootstrapDialogTitle.propTypes = {
         open={open}
       >
         <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
-          JavaScript Vanilla
+          ReactJS
         </BootstrapDialogTitle>
         <DialogContent dividers>
           <Typography gutterBottom>
-            Mis primeros proyectos con JS, CSS3 y HTML5.
+            Estos son algunos de mis trabajos con ReactJS.
           </Typography>
-          <Typography gutterBottom>
           <div>
-          <CardM />
+          <CardM2 />
           </div>
-          </Typography>
+
         </DialogContent>
       </BootstrapDialog>
     </div>
   );
 }
 
-export default ModalDialog2;
+export default ModalDialog3;

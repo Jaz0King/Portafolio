@@ -14,11 +14,14 @@ import Typewriter from "react-typewriter-animate";
 import "react-typewriter-animate/dist/Typewriter.css";
 import ModalDialog from "./components/ModalDialog";
 import ModalDialog2 from "./components/ModalDialog2";
+import ModalDialog3 from "./components/ModalDialog3";
+import ModalDialog4 from "./components/ModalDialog4";
+import ModalDialog5 from "./components/ModalDialog5";
 //Pasamos los objetos en 3D como props de ThreeScene
 
 function App() {
   return (
-    <div style={{ height: '80vh'}}>
+    <div style={{ height: '81vh'}}>
       <div className="contText1">
         <ResponsiveAppBar />
         <Typewriter 
@@ -26,64 +29,61 @@ function App() {
           [{type:"word", text: "Hola, Soy Jaziel Ramírez"}],
           [{type:"word", text: "Software Developer "}],
           [{type:"word", text: "Bienvenid@s"}],
-          [{type:"word", text: "Navega por el ciberespacio"}],
+          [{type:"word", text: "Atrevete y navega libremente"}],
           [{type:"word", text: "Haz zoom con los dedos o el  mouse"}],
           [{type:"word", text: "Muevete libremente"}],
-          [{type:"word", text: "echa un vistazo a mis proyectos..."}]
+          [{type:"word", text: "Navega con la barra superior"}],
+          [{type:"word", text: "Atrevete y busca los botones en las esferas..."}],
+          [{type:"word", text: "No olvides hacer tu donación..."}]
         ]}
         /> 
       </div>
       
       <ThreeScene> 
         <color attach="background" args={['#161c24']}  /> 
-        <Html
+        <Html 
         sprite
         distanceFactor={10}
-        position={[-4, 0, 0]}>
+        position={[-6, 0, 0]}>
            <ModalDialog />
         </Html>
         <Sphere />
+
         <Html
         sprite
         distanceFactor={20}
         position={[3, 0, 2]}>
          <ModalDialog2 />
         </Html>
-
-        <Sphere3 color= "blue"  />
-        <Html
-        sprite
-        distanceFactor={20}
-        position={[7, 0, 0]}>
-         <a href='https://mui.com/material-ui/react-button/#text-buttons' 
-         target='_blanck'
-         className="subt" 
-         > 
-           Star3
-         </a>
-        </Html>
         <Sphere2 />
+        
         <Html
         sprite
         distanceFactor={20}
-        position={[11, 0, 0]}>
-         <a href={CV} 
-         target='_blanck'
-         className="subt" 
-         > 
-           Star4
-         </a>
+        position={[-13, 4, 12]}>
+        <ModalDialog3 />
         </Html>
+        <Sphere3 />
 
-       
+        <Html
+        sprite
+        distanceFactor={20}
+        position={[18, 4, 0]}>
+          <ModalDialog4 />
+        </Html>
+         <Sphere4 />
 
-        <Sphere4 />
-
+         <Html
+        sprite
+        distanceFactor={20}
+        position={[-20, 0, 0]}>
+          <ModalDialog5 />
+        </Html>
         <Sphere5 />
 
         <PerspectiveCamera 
         makeDefault
-        position={[-5, 10, 10]}
+        position={[18, 4, 0]}
         fov={75} />
         <MapControls autoRotate/>
         

@@ -18,7 +18,7 @@ const Sphere3 = () => {
         scale={clicked ? 2.5 : 1}
         onClick={(e) => click(!clicked)}
         >
-          <sphereGeometry args={[3,90,90]}/> 
+          <sphereGeometry args={[4,90,90]}/> 
           <meshMatcapMaterial matcap={matcap} />  
         </mesh>
         
